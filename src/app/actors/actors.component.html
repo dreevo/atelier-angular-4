@@ -1,0 +1,14 @@
+<hr />
+// Exercice 2
+<br />
+<ul *ngFor="let actor of listActors">
+  <app-actor
+    [actor]="actor"
+    (onDelete)="deleteActor($event)"
+    (onAddOrRemove)="addOrRemove($event)"
+  ></app-actor>
+</ul>
+<h1>Acteurs Favoris</h1>
+<ul *ngFor="let actor of listFavoris">
+  <app-actor [actor]="actor"></app-actor>
+</ul>

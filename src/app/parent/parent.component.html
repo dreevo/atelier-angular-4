@@ -1,0 +1,12 @@
+<hr />
+// Exercice 3
+<br /><br />
+<label for="couleur">Couleur ou code couleur :</label><br />
+<input
+  type="text"
+  id="couleur"
+  #couleur
+  (ngModelChange)="changeColor($event)"
+  [(ngModel)]="color"
+/>
+<app-fils [color]="color" (onReset)="reset($event)"></app-fils>
